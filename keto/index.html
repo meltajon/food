@@ -11,17 +11,41 @@
     <script src="../js/load-json.js"></script>
   </head>
   <body>
-
-    <h1>Keto</h1>
-    <ul id="ajax"></ul>
+    <main id="ajax"></main>
 
     <script id="template" type="text/x-handlebars-template">
-      {{#each items}}
-      <li>
-        <label><input type="checkbox">{{this}}</label>
-      </li>
-      {{/each}}
-    </script>
+      {{#if fast_food}}
+      <h2>Fast Food</h2>
+      <ul>
+        {{#each fast_food}}
+        <li>
+          <label><input type="checkbox">{{this}}</label>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
 
+      {{#if sit_down}}
+      <h2>Sit-Down</h2>
+      <ul>
+        {{#each sit_down}}
+        <li>
+          <label><input type="checkbox">{{this}}</label>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
+
+      {{#if far}}
+      <h2>Far</h2>
+      <ul>
+        {{#each far}}
+        <li>
+          <label><input type="checkbox">{{this}}</label>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    </script>
   </body>
 </html>

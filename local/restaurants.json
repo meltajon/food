@@ -1,5 +1,5 @@
 {
-  "items": [
+  "fast_food": [
     "Arby's",
     "Bagels",
     "Carls Jr.",
@@ -39,8 +39,9 @@
     "Weinershnitzel",
     "Which Wich",
     "Wing Stop",
-    "Yoshinoya",
-
+    "Yoshinoya"
+  ],
+  "sit_down": [
     "Buffalo Wild Wings",
     "California Pizza Kitchen",
     "Dim Sum",
@@ -51,8 +52,9 @@
     "Pho Tasty",
     "Thai BBQ",
     "Wood Ranch BBQ",
-    "Yojie Shabu Shabu",
-
+    "Yojie Shabu Shabu"
+  ],
+  "far": [
     "Portillo's",
     "Shakas",
     "Veggie Grill",

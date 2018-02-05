@@ -1,5 +1,5 @@
 {
-  "items": [
+  "fast_food": [
     "Chick-Fil-A",
     "Chipotle",
     "Five Guys",
@@ -13,8 +13,9 @@
     "Souplantation",
     "Subway",
     "Taco Bell",
-    "Wing Stop",
-
+    "Wing Stop"
+  ],
+  "sit_down": [
     "Bellko KBBQ",
     "Buffalo Wild Wings",
     "Dim Sum",
