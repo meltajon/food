@@ -12,6 +12,10 @@ function createHTML(data) {
   postsContainer.innerHTML = generatedTemplate;
 }
 
+function toggleListItem() {
+  $('input:checked').parent().parent().css( "display", "none" );
+}
+
 // var myRequest = JSON.parse(document.getElementById('restaurants').innerHTML);
 
 var myRequest = new XMLHttpRequest();
@@ -21,13 +25,6 @@ myRequest.onload = function() {
   if (myRequest.status >= 200 && myRequest.status < 400) {
     var data = JSON.parse(myRequest.responseText);
     createHTML(data);
-
-    var toggleListItem = function() {
-      $('input:checked').parent().css( "display", "none" );
-    };
-
-    toggleListItem();
-     
     $("input").on( "click", toggleListItem);
 
   } else {
