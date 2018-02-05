@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>  
-    <title>Local</title>
+    <title>Mel's Local Food</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="../css/style.css" />
@@ -14,6 +14,28 @@
     <main id="ajax"></main>
 
     <script id="template" type="text/x-handlebars-template">
+      {{#if keto_fast_food}}
+      <h2>Keto Fast Food</h2>
+      <ul>
+        {{#each keto_fast_food}}
+        <li>
+          <label><input type="checkbox">{{this}}</label>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
+
+      {{#if keto_sit_down}}
+      <h2>Keto Sit-Down</h2>
+      <ul>
+        {{#each keto_sit_down}}
+        <li>
+          <label><input type="checkbox">{{this}}</label>
+        </li>
+        {{/each}}
+      </ul>
+      {{/if}}
+
       {{#if fast_food}}
       <h2>Fast Food</h2>
       <ul>
