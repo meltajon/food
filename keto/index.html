@@ -7,22 +7,66 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+
     <script src="../js/handlebars/handlebars-v4.0.11.js"></script>
 
-    <div id="pagebody">
-      <?php
-        print "<ul id='like_list'>\n";
-        foreach($places AS $index => $place) {
-            print "<li><label onclick='this.firstChild.checked = true;'><input type='checkbox' onclick=\"check('$index'); \"> $place</label></li>\n";
+    <script>
+      /**
+       * Code by "Learn Web Code"
+       * https://www.youtube.com/watch?v=wSNa5b1mS5Y
+       */
+
+      function createHTML(data) {
+        var rawTemplate = document.getElementById("template").innerHTML;
+        var compileTemplate = Handlebars.compile(rawTemplate);
+        var generatedTemplate = compileTemplate(data);
+        
+        var postsContainer = document.getElementById("ajax");
+        postsContainer.innerHTML = generatedTemplate;
+      }
+
+      // var myRequest = JSON.parse(document.getElementById('restaurants').innerHTML);
+
+      var myRequest = new XMLHttpRequest();
+      myRequest.open('GET', 'restaurants.json');
+
+      myRequest.onload = function() {
+        if (myRequest.status >= 200 && myRequest.status < 400) {
+          var data = JSON.parse(myRequest.responseText);
+          createHTML(data);
+        } else {
+          console.log("Connected established, but with error.");
         }
-        print "</ul>\n";
-        print "<ul id='dislike_list'>\n";
-        foreach($places AS $index => $place) {
-            print "<li style='display: none'><label onclick='this.firstChild.checked = false;'><input type='checkbox' checked onclick=\"uncheck('$index');\"> $place</label></li>\n";
-        }
-        print "</ul>\n";
-      ?>
-    </div><!-- END #pagebody -->
+      };
+
+      myRequest.onerror = function() {
+        console.log("Connection Error.");
+      };
+
+      myRequest.send();
+    </script>
+
+    <div id="ajax"></div>
+
+    <script id="template" type="text/x-handlebars-template">
+      <h1>Restaurants</h1>
+
+      <ul id="like_list">
+        {{#each items}}
+        <li>
+          <label onclick='this.firstChild.checked = true;'><input type='checkbox' onclick="check('$index'); "> {{this}}</label>
+        </li>
+        {{/each}}
+      </ul>
+
+      <ul id="dislike_list">
+        {{#each items}}
+        <li style='display: none'>
+          <label onclick='this.firstChild.checked = false;'><input type='checkbox' checked onclick="uncheck('$index');"> {{this}}</label>
+        </li>
+        {{/each}}
+      </ul>
+    </script>
 
     <script src="../js/toggle.js"></script>
   </body>
