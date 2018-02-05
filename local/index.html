@@ -7,47 +7,10 @@
     <link rel="stylesheet" href="../css/style.css" />
 
     <script src="../js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../js/handlebars/handlebars-v4.0.11.js"></script>
+    <script src="../js/load-json.js"></script>
   </head>
   <body>
-
-    <script src="../js/handlebars/handlebars-v4.0.11.js"></script>
-
-    <script>
-      /**
-       * Code by "Learn Web Code"
-       * https://www.youtube.com/watch?v=wSNa5b1mS5Y
-       */
-
-      function createHTML(data) {
-        var rawTemplate = document.getElementById("template").innerHTML;
-        var compileTemplate = Handlebars.compile(rawTemplate);
-        var generatedTemplate = compileTemplate(data);
-        
-        var postsContainer = document.getElementById("ajax");
-        postsContainer.innerHTML = generatedTemplate;
-      }
-
-      // var myRequest = JSON.parse(document.getElementById('restaurants').innerHTML);
-
-      var myRequest = new XMLHttpRequest();
-      myRequest.open('GET', 'restaurants.json');
-
-      myRequest.onload = function() {
-        if (myRequest.status >= 200 && myRequest.status < 400) {
-          var data = JSON.parse(myRequest.responseText);
-          createHTML(data);
-        } else {
-          console.log("Connected established, but with error.");
-        }
-      };
-
-      myRequest.onerror = function() {
-        console.log("Connection Error.");
-      };
-
-      myRequest.send();
-    </script>
-
     <div id="ajax"></div>
 
     <script id="template" type="text/x-handlebars-template">
