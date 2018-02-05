@@ -11,18 +11,16 @@
     <script src="../js/load-json.js"></script>
   </head>
   <body>
-    <div id="ajax"></div>
+
+    <h1>Keto</h1>
+    <ul id="ajax"></ul>
 
     <script id="template" type="text/x-handlebars-template">
-      <h1>Restaurants</h1>
-
-      <ul id="like_list">
-        {{#each items}}
-        <li>
-          <label><input type="checkbox">{{this}}</label>
-        </li>
-        {{/each}}
-      </ul>
+      {{#each items}}
+      <li>
+        <label><input type="checkbox">{{this}}</label>
+      </li>
+      {{/each}}
     </script>
 
   </body>
