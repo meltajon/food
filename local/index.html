@@ -19,20 +19,11 @@
       <ul id="like_list">
         {{#each items}}
         <li>
-          <label onclick='this.firstChild.checked = true;'><input type='checkbox' onclick="check('$index'); "> {{this}}</label>
-        </li>
-        {{/each}}
-      </ul>
-
-      <ul id="dislike_list">
-        {{#each items}}
-        <li style='display: none'>
-          <label onclick='this.firstChild.checked = false;'><input type='checkbox' checked onclick="uncheck('$index');"> {{this}}</label>
+          <label><input type="checkbox">{{this}}</label>
         </li>
         {{/each}}
       </ul>
     </script>
 
-    <script src="../js/toggle.js"></script>
   </body>
 </html>

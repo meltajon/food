@@ -21,6 +21,15 @@ myRequest.onload = function() {
   if (myRequest.status >= 200 && myRequest.status < 400) {
     var data = JSON.parse(myRequest.responseText);
     createHTML(data);
+
+    var toggleListItem = function() {
+      $('input:checked').parent().css( "display", "none" );
+    };
+
+    toggleListItem();
+     
+    $("input").on( "click", toggleListItem);
+
   } else {
     console.log("Connected established, but with error.");
   }
