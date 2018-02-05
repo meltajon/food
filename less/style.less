@@ -1,13 +1,10 @@
-*, 
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body { 
   font-family: helvetica; font-size: 18px;
   margin: 0;
-  overflow-x: hidden;
+}
+
+h1 {
+  margin-bottom: 0; padding: 10px;
 }
 
 ul { 
@@ -22,8 +19,14 @@ li {
 }
 
 label { 
-  display: block; 
+  display: flex; 
+  align-items: center;
+  box-sizing: border-box;
   padding: 10px; width: 100%;
   border-bottom: 1px solid #E5E5E5;
-  font-weight: bold;
+  font-weight: bold; line-height: 1.2em;
+}
+
+input {
+  margin-right: .5em;
 }
