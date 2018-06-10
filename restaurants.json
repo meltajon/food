@@ -8,7 +8,6 @@
     "In-N-Out",
     "KFC",
     "Kogi BBQ",
-    "Kyon Chon",
     "L&L's",
     "LA Brisket",
     "Taco Bell",
@@ -22,8 +21,7 @@
     "Hawaiian Loft",
     "Ma Dang Sae",
     "Moo BBQ",
-    "Outback",
-    "Souplantation"
+    "Outback"
   ],
   "fast_food": [
     "Arby's",
@@ -47,8 +45,6 @@
     "Papa Johns",
     "Philly's Best",
     "Pieology",
-    "Quiznos",
-    "Souplantation",
     "Subway",
     "Tommy's",
     "Wasabi Grill",
@@ -60,6 +56,7 @@
     "California Pizza Kitchen",
     "Gatten Sushi",
     "Pho Tasty",
+    "Souplantation",
     "Thai BBQ",
     "Wood Ranch BBQ",
     "Yojie Shabu Shabu"
