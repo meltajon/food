@@ -1,9 +1,9 @@
 {
   "keto_fast_food": [
+    "Arby's",
     "Chick-Fil-A",
     "Chipotle",
     "Costco",
-    "Five Guys",
     "Halal Guys",
     "In-N-Out",
     "KFC",
@@ -24,7 +24,6 @@
     "Outback"
   ],
   "fast_food": [
-    "Arby's",
     "Bagels",
     "Carls Jr.",
     "Corner Bakery",
