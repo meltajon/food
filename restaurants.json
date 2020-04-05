@@ -24,6 +24,7 @@
     "Outback"
   ],
   "fast_food": [
+    "808 Local Hawaiian Grill",
     "Bagels",
     "Carls Jr.",
     "Corner Bakery",
@@ -48,21 +49,18 @@
     "Tommy's",
     "Wasabi Grill",
     "Weinershnitzel",
-    "Which Wich",
     "Yoshinoya"
   ],
   "sit_down": [
     "California Pizza Kitchen",
-    "Gatten Sushi",
     "Pho Tasty",
     "Souplantation",
     "Thai BBQ",
-    "Wood Ranch BBQ",
-    "Yojie Shabu Shabu"
+    "Wood Ranch BBQ"
   ],
   "far": [
     "Portillo's",
-    "Shakas",
+    "Nakas",
     "Veggie Grill",
     "Zankou",
     "zPizza"
