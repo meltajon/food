@@ -32,10 +32,12 @@
     "El Pollo Loco",
     "Genkiyaki",
     "Green Burrito",
+    "Hambone's",
     "Hot Dog on a Stick",
     "Italian Deli",
     "Jack",
     "Jamba Juice",
+    "Katsu Bar",
     "Lee's Sandwiches",
     "Little Caesars",
     "McDonald's",
@@ -44,6 +46,7 @@
     "Papa Johns",
     "Philly's Best",
     "Pieology",
+    "Pizza Hut",
     "Subway",
     "Tommy's",
     "Wasabi Grill",
@@ -53,7 +56,6 @@
   "sit_down": [
     "California Pizza Kitchen",
     "Pho Tasty",
-    "Souplantation",
     "Thai BBQ",
     "Wood Ranch BBQ"
   ],
