@@ -19,10 +19,13 @@
     "Hawaiian Loft",
     "Ma Dang Sae",
     "Moo BBQ",
-    "Outback"
+    "Outback",
+    "Ziggle KBBQ"
   ],
   "fast_food": [
     "808 Local Hawaiian Grill",
+    "Aloha Stacks",
+    "Arigato Bato",
     "Bagels",
     "Brooklynz Pizza",
     "Cafe Rio",
@@ -35,6 +38,7 @@
     "Fatburger",
     "Five Guys",
     "Gogini BBQ",
+    "Gus' BBQ",
     "Hambone's",
     "Honey Baked",
     "Hot Dog on a Stick",
@@ -61,7 +65,8 @@
     "Wasabi Grill",
     "Wendy's",
     "Weinershnitzel",
-    "Yoshinoya"
+    "Yoshinoya",
+    "Zankou"
   ],
   "sit_down": [
     "BJ's",
@@ -86,7 +91,7 @@
     "Portillo's",
     "Nick's Deli",
     "Ramen & Tsukemen Tao",
-    "Veggie Grill",
-    "Zankou"
+    "Shake Shack",
+    "Veggie Grill"
   ]
 }
