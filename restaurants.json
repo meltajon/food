@@ -1,4 +1,38 @@
 {
+  "homemade_breakfast": [
+    "Breakfast Burritos",
+    "English Breakfast",
+    "Keto Pancakes",
+    "Overnight Oats",
+    "Spam & Eggs"
+  ],
+  "homemade_meals": [
+    "Beef Enoki",
+    "BLT",
+    "Cheeseburgers",
+    "Cheesesteaks",
+    "Chicken Salad Sandwich",
+    "Chili",
+    "Cup Noodles",
+    "Filipino Spaghetti",
+    "Grilled Cheese",
+    "Hamburger Steak",
+    "H-Mart Bulgogi",
+    "Hot Links",
+    "Japanese Egg Salad Sandwich",
+    "Keto Chow",
+    "Korean BBQ Ground Beef",
+    "Labna Cheese Bread",
+    "Pad Kee Mao",
+    "Quesadilla",
+    "Sausage or Meatballs",
+    "Sloppy Joes",
+    "Soylent",
+    "Steak",
+    "Sweet & Sour Chicken",
+    "Tacos",
+    "Vons Breaded Chicken Breast"
+  ],
   "keto_fast_food": [
     "Arby's",
     "Chick-Fil-A",
@@ -17,8 +51,6 @@
   "keto_sit_down": [
     "Buffalo Wild Wings",
     "Hawaiian Loft",
-    "Ma Dang Sae",
-    "Moo BBQ",
     "Outback",
     "Ziggle KBBQ"
   ],
@@ -75,11 +107,12 @@
     "Monora Thai",
     "Norm's",
     "Olive Garden",
+    "Original Thai BBQ on 183rd",
+    "Original Thai BBQ on Artesia",
     "Pho Tasty",
     "Salo Salo",
     "Silverlake Ramen",
     "Sizzler",
-    "Thai BBQ",
     "Wood Ranch BBQ"
   ],
   "far": [
