@@ -56,9 +56,11 @@
   ],
   "fast_food": [
     "808 Local Hawaiian Grill",
+    "Aliacci's",
     "Aloha Stacks",
     "Arigato Bato",
     "Bagels",
+    "Bafang Dumpling",
     "Brooklynz Pizza",
     "Cafe Rio",
     "Carls Jr.",
@@ -117,14 +119,17 @@
   ],
   "far": [
     "Acapulco",
+    "Beach City Deli",
     "Blue Burro",
-    "Boston Market",
+    "LJ's Little Cafe",
     "Mayflower Dumpling Express",
+    "OBRA",
     "Philly's Best",
     "Portillo's",
     "Nick's Deli",
     "Ramen & Tsukemen Tao",
     "Shake Shack",
+    "Shootz",
     "Veggie Grill"
   ]
 }
