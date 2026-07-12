@@ -14,10 +14,10 @@
     <main id="ajax"></main>
 
     <script id="template" type="text/x-handlebars-template">
-      {{#if homemade_breakfast}}
-      <h2>Homemade Breakfast</h2>
+      {{#if homemade}}
+      <h2>Homemade</h2>
       <ul>
-        {{#each homemade_breakfast}}
+        {{#each homemade}}
         <li>
           <label><input type="checkbox">{{this}}</label>
         </li>
@@ -25,10 +25,10 @@
       </ul>
       {{/if}}
 
-      {{#if homemade_meals}}
-      <h2>Homemade Meals</h2>
+      {{#if quick}}
+      <h2>Quick</h2>
       <ul>
-        {{#each homemade_meals}}
+        {{#each quick}}
         <li>
           <label><input type="checkbox">{{this}}</label>
         </li>
@@ -36,21 +36,10 @@
       </ul>
       {{/if}}
 
-      {{#if keto_fast_food}}
-      <h2>Keto Fast Food</h2>
+      {{#if monthly}}
+      <h2>Monthly Credits</h2>
       <ul>
-        {{#each keto_fast_food}}
-        <li>
-          <label><input type="checkbox">{{this}}</label>
-        </li>
-        {{/each}}
-      </ul>
-      {{/if}}
-
-      {{#if keto_sit_down}}
-      <h2>Keto Sit-Down</h2>
-      <ul>
-        {{#each keto_sit_down}}
+        {{#each monthly}}
         <li>
           <label><input type="checkbox">{{this}}</label>
         </li>
